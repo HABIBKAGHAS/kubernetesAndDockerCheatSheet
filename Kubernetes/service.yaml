@@ -2,12 +2,12 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: demo-service
+  name: myybs-service
   namespace: development
 spec:
   selector:
-    app: pod-info
+    app: myybs
   ports:
-    - port: 80
-      targetPort: 3000
+    - port: 8080
+      targetPort: 8080
   type: LoadBalancer
